@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Basic greetings -->
+<category>
+    <pattern>HELLO</pattern>
+    <template>Hello! How can I help you with Pokémon today?</template>
+</category>
+
+<category>
+    <pattern>HI</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HEY</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>GREETINGS</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<!-- Goodbye responses -->
+<category>
+    <pattern>BYE</pattern>
+    <template>#0$Goodbye! Hope to see you soon!</template>
+</category>
+
+<category>
+    <pattern>GOODBYE</pattern>
+    <template><srai>BYE</srai></template>
+</category>
+
+<category>
+    <pattern>EXIT</pattern>
+    <template><srai>BYE</srai></template>
+</category>
+
+<!-- Pokémon info patterns -->
+<category>
+    <pattern>WHO IS *</pattern>
+    <template>#1$<star/></template>
+</category>
+
+<category>
+    <pattern>WHAT IS *</pattern>
+    <template>#1$<star/></template>
+</category>
+
+<category>
+    <pattern>TELL ME ABOUT *</pattern>
+    <template>#1$<star/></template>
+</category>
+
+<!-- Logical reasoning patterns -->
+<category>
+    <pattern>I KNOW THAT * IS *</pattern>
+    <template>#31$<star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+    <pattern>CHECK THAT * IS *</pattern>
+    <template>#32$<star index="1"/> is <star index="2"/></template>
+</category>
+
+<!-- Image classification patterns -->
+<category>
+    <pattern>WHAT IS IN THIS IMAGE</pattern>
+    <template>#40$classify_image</template>
+</category>
+
+<category>
+    <pattern>CLASSIFY THIS IMAGE</pattern>
+    <template>#40$classify_image</template>
+</category>
+
+<category>
+    <pattern>WHAT POKEMON IS IN THIS PICTURE</pattern>
+    <template>#40$classify_image</template>
+</category>
+
+<!-- Fallback -->
+<category>
+    <pattern>*</pattern>
+    <template>#99$I'm not sure how to respond to that.</template>
+</category>
+
+</aiml>
