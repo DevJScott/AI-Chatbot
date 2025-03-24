@@ -1,0 +1,15 @@
+Fact,Type
+"Electric(Pikachu)",assertion
+"Water(Squirtle)",assertion
+"Fire(Charmander)",assertion
+"Evolves(Pikachu, Raichu)",assertion
+"Evolves(Charmander, Charmeleon)",assertion
+"Evolves(Charmeleon, Charizard)",assertion
+"Evolves(Squirtle, Wartortle)",assertion
+"Evolves(Wartortle, Blastoise)",assertion
+"WeakAgainst(Fire, Water)",assertion
+"StrongAgainst(Water, Fire)",assertion
+"WeakAgainst(Electric, Ground)",assertion
+"Electric(x) -> StrongAgainst(x, Water)",rule
+"Water(x) -> WeakAgainst(x, Electric)",rule
+"Fire(x) -> WeakAgainst(x, Water)",rule

@@ -1,0 +1,190 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+  <!-- Final Fantasy Characters -->
+    <category>
+        <pattern>WHO IS CLOUD</pattern>
+        <template>
+            Cloud Strife is the main protagonist of Final Fantasy VII. He is a former SOLDIER turned mercenary who wields the Buster Sword. Cloud is known for his iconic spiky hair and his involvement in the fight against Sephiroth.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS TIFA</pattern>
+        <template>
+            Tifa Lockhart is a main character in Final Fantasy VII and a childhood friend of Cloud. She is a skilled martial artist who fights to protect the world from the forces of Shinra and Sephiroth.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS SEPHIROTH</pattern>
+        <template>
+            Sephiroth is the primary antagonist in Final Fantasy VII. Once a heroic member of SOLDIER, he turned into a villain after discovering his true origins. He wields the powerful Masamune sword.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS SQUALL</pattern>
+        <template>
+            Squall Leonhart is the protagonist of Final Fantasy VIII. He is a SeeD mercenary known for his use of the Gunblade and his introverted personality, though he grows into a strong leader throughout the game.
+        </template>
+    </category>
+
+  <category>
+    <pattern>WHO IS AERITH</pattern>
+    <template>#1$Aerith Gainsborough</template>
+</category>
+
+<category>
+    <pattern>WHO IS VINCENT</pattern>
+    <template>#1$Vincent Valentine</template>
+</category>
+
+<category>
+    <pattern>WHO IS YUFFIE</pattern>
+    <template>#1$Yuffie Kisaragi</template>
+</category>
+
+<category>
+    <pattern>WHO IS ZIDANE</pattern>
+    <template>#1$Zidane Tribal</template>
+</category>
+
+<category>
+    <pattern>WHO IS LIGHTNING</pattern>
+    <template>#1$Lightning (Claire Farron)</template>
+</category>
+
+<category>
+    <pattern>WHO IS NOCTIS</pattern>
+    <template>#1$Noctis Lucis Caelum</template>
+</category>
+
+<category>
+    <pattern>WHO IS SQUALL</pattern>
+    <template>#1$Squall Leonhart</template>
+</category>
+
+
+    <!-- Final Fantasy Games -->
+    <category>
+        <pattern>WHAT IS FINAL FANTASY VII</pattern>
+        <template>
+            Final Fantasy VII is a popular role-playing game released by Square Enix. It follows the story of Cloud Strife and his fight against the Shinra corporation and Sephiroth to save the planet.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS FINAL FANTASY</pattern>
+        <template>
+            Final Fantasy is a long-running role-playing game franchise developed by Square Enix. Each game in the series has a unique story, characters, and world, but they all focus on epic battles, deep storytelling, and magical elements.
+        </template>
+    </category>
+
+    <!-- Final Fantasy Games -->
+<category>
+    <pattern>WHAT IS FINAL FANTASY X</pattern>
+    <template>#1$Final Fantasy X</template>
+</category>
+
+<category>
+    <pattern>WHAT IS FINAL FANTASY VIII</pattern>
+    <template>#1$Final Fantasy VIII</template>
+</category>
+
+<category>
+    <pattern>WHAT IS FINAL FANTASY XII</pattern>
+    <template>#1$Final Fantasy XII</template>
+</category>
+
+<category>
+    <pattern>WHAT IS FINAL FANTASY XIV</pattern>
+    <template>#1$Final Fantasy XIV</template>
+</category>
+
+<category>
+    <pattern>WHAT IS FINAL FANTASY TACTICS</pattern>
+    <template>#1$Final Fantasy Tactics</template>
+</category>
+    <!-- Comparisons and Additional Final Fantasy Topics -->
+    <category>
+        <pattern>WHO IS STRONGER CLOUD OR SEPHIROTH</pattern>
+        <template>
+            Sephiroth is often depicted as being stronger than Cloud, especially with his knowledge of the planet's secrets. However, Cloud overcomes great odds to defeat him with the help of his friends.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE CLOUD'S MOVES</pattern>
+        <template>
+            Cloud's most iconic moves include his sword attacks with the Buster Sword, and Limit Breaks like Omnislash, which is one of his most powerful techniques.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS NOCTIS</pattern>
+        <template>
+            Noctis Lucis Caelum is the protagonist of Final Fantasy XV. He is the prince of the Kingdom of Lucis and fights to reclaim his throne with his friends by his side.
+        </template>
+    </category>
+
+<!--- Wikipedia API -->
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
